@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    background: #ffffff;
+}
+
+
+
+main {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer, .home, section {
+    flex-shrink: 0;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1140px;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        max-width: 98%;
+    }
+}
+
+@media only screen and (max-width : 1920px) {}
+@media only screen and (max-width : 1680px) {}
+@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1280px) {}
+@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 800px) {}
+@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 600px) {}
+@media only screen and (max-width : 533px) {}
+@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 320px) {}
+@media only screen and (max-width : 240px) {}
+@media only screen and (max-width : 176px) {}
+
+/* Читать больше на: https://proverstka.com.ua/blog/spisok-populyarnyx-mediazaprosov/ */

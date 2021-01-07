@@ -1,0 +1,11 @@
+@import 'vars';
+@import 'fonts';
+
+body {
+    color: $text-color;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}

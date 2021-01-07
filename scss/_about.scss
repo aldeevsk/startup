@@ -1,0 +1,92 @@
+@import 'vars';
+@import 'fonts';
+@import 'grid';
+@import 'global';
+
+.about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 100px 0;
+        span {
+            height: 2px;
+            width: 50px;
+            background: $text-color;
+            margin: 20px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-desc {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 75px 0 70px 0;
+                .block {
+                    flex-basis: 48%;
+                    text-align: left;
+                }
+        }
+        .employees {
+            display: flex;
+            justify-content: space-between;
+                .block {
+                    flex-basis: 23%;
+                        img {
+                            width: 100%;
+                        }
+                        strong {
+                            text-transform: uppercase;
+                            line-height: 2;
+                        }
+                }
+        }
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding: 20px 0;
+        span {
+            height: 2px;
+            width: 50px;
+            background: $text-color;
+            margin: 20px 0;
+        }
+        strong {
+            margin-bottom: 20px;
+        }
+        .about-desc {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 75px 0 70px 0;
+            display: none;
+                .block {
+                    flex-basis: 95%;
+                    text-align: left;
+                }
+        }
+        .employees {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+                .block {
+                    flex-basis: 95%;
+                        img {
+                            width: 100%;
+                        }
+                        strong {
+                            text-transform: uppercase;
+                            line-height: 2;
+                        }
+                        p {
+                            margin-bottom: 10px;
+                        }
+                }
+        }
+    }
+}

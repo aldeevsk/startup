@@ -1,0 +1,10 @@
+$text-color: #555555;
+$text-light-color: #fff;
+$theme-color: #c0301c;
+
+@mixin fl-bw-c {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+@import 'vars';
+@import 'fonts';
+@import 'grid';
+
+.services {
+    display: flex;
+    justify-content: center;
+    .container {
+        text-align: center;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            span {
+                height: 2px;
+                width: 60px;
+                background: $text-color;
+                margin: 20px 0;
+            }
+            .blocks {
+                display: flex;
+                justify-content: space-between;
+                .block {
+                    margin-top: 80px;
+                    flex-basis: 30%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        width: 85px;
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        .container {
+            height: 350px;
+                .blocks {
+                    .block {
+                        margin-top: 50px;
+                        height: 100px;
+                        img {
+                            width: 50px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+        }
+    }
+}
